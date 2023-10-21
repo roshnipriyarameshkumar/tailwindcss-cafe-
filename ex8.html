@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table form</title>
+  <!-- Include the Tailwind CSS stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-yellow-300">
+    <nav class="bg-yellow-800 pb-20 text-white pt-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold ml-10">RP Cafe</a>
+            <ul class="flex space-x-6 mr-2">
+              <a href="EX1.html" class="text-gray-800 hover:text-white font-bold mb-2">Home</a>                
+              <a href="ex5.html" class="text-gray-800 hover:text-white font-bold mb-2">About Us</a>
+              <a href="ex4.html" class="text-gray-800 hover:text-white font-bold mb-2">Services</a>
+              <a href="ex6.html" class="text-gray-800 hover:text-white font-bold mb-2">Gallery</a>
+
+        </div>
+    </nav>
+    <br><br><br>
+  <div class="max-w-md mx-auto bg-yellow-200 p-8 rounded-md shadow-md">
+    <h1 class="text-2xl font-bold mb-4 text-center bg-yellow-700">Table Booking</h1>
+
+    <!-- Filters -->
+    <div class="mb-4">
+      <label for="date" class="block text-black font-semibold">Select Date:</label>
+      <input type="date" id="date" name="date" class="mt-1 p-2 w-full border border-gray-300 rounded-md">
+    </div>
+
+    <div class="mb-4">
+      <label for="time" class="block text-black font-semibold">Select Time:</label>
+      <input type="time" id="time" name="time" class="mt-1 p-2 w-full border border-gray-300 rounded-md">
+    </div>
+
+    <!-- Table Booking Form -->
+    <form action="#" method="post">
+      <div class="mb-4">
+        <label for="name" class="block text-black font-semibold">Your Name:</label>
+        <input type="text" id="name" name="name" class="mt-1 p-2 w-full border border-gray-300 rounded-md">
+      </div>
+
+      <div class="mb-4">
+        <label for="email" class="block text-black font-semibold">Email Address:</label>
+        <input type="email" id="email" name="email" class="mt-1 p-2 w-full border border-gray-300 rounded-md">
+      </div>
+
+      <div class="mb-4">
+        <label for="phone" class="block text-black font-semibold">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" class="mt-1 p-2 w-full border border-gray-300 rounded-md">
+      </div>
+
+      <div class="mb-4">
+        <label for="guests" class="block text-black font-semibold">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" class="mt-1 p-2 w-full border border-gray-300 rounded-md">
+      </div>
+
+      <button type="submit" class="bg-yellow-800  text-white p-2 rounded-md hover:bg-yellow-400 transition duration-300 ml-32">Book Table</button>
+    </form>
+  </div>
+
+</body>
+</html>
